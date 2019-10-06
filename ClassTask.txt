@@ -1,0 +1,51 @@
+<html>
+<script>
+//Q.1 Make a constructor function to create the objects of different students.Students must have name, age and semester.
+function Students(name, age, semester)     
+{
+  this.Name = name;
+  this.Age = age;
+  this.Semester = semester;
+}
+
+
+//Q.2 Create three objects using this constructor.
+var std1 = new Students("Aysha",22,"4rth");
+var std1 = new Students("Anam",23,"4rth");
+var std1 = new Students("Sana",24,"4rth");
+
+
+//Q.3 Add a property named program in Student Prototype.
+Students.prototype.Program="Mcs";
+Object.defineProperty(std1,"program",{value:"Mcs"});
+
+
+//Q4.Add amethod using defineProperty method to prototype.That displays all information of student in string format.
+Students.std1=function()
+{
+return this.Name +" "+ this.Age +" "+ this.Semester;
+}
+Console.log("Information of student in String Format is:"+std1);
+
+
+//Q.5 Add all three objects in Array
+Creats a function that gets input from user and search it in object properties, if found print value. 
+var StudentsArray = [ 
+	{Name:"Aysha" , Age:22, Semester:"4rth"},
+	{Name:"Anam" , Age:23, Semester:"4rth"},
+	{Name:"Aysha" , Age:24, Semester:"4rth"}
+]
+var value;
+value = Prompt("Enter a name you want to search");
+if (StudentsArray[Name]==value)
+{
+Console.log(StudetsArray[Name]);
+}
+else
+{
+Console.log("Value not found")
+}
+
+
+</script>
+</html>
